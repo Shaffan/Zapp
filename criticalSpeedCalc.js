@@ -6,7 +6,7 @@
  *******************************/
 
 
-function calcSpeed() {
+ function calcSpeed() {
 
     document.calculator.speed.value = Math.round((document.calculator.fixity.value * document.calculator.unit.value * document.calculator.root.value) / (document.calculator.bearings.value * document.calculator.bearings.value));
 
@@ -112,7 +112,7 @@ function reset()
 	document.calculator.root.value = "";
     document.calculator.bearings.value = "";
     document.calculator.speed.value = "";
-	
-	$("select#unit, select[name=fixity]").prop('selectedIndex',0);
-	$("label[for = unit]").text("mm");
+    
+    $("select#unit, select[name=fixity]").prop('selectedIndex',0);
+    $("label[for = unit]").text("mm");
 }

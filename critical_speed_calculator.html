@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8"/>
-		<meta name="author" content="Stefan Horne" />
-		<title>Calculate Metric Critical Speed</title>
-		<script src="js/jquery-1.11.0.min.js"></script>
-		<script src="js/criticalSpeedCalc.js"></script>
-		<link href="stylesheets/calcstyle.css" rel="stylesheet" type="text/css">
-		<link href="stylesheets/normalize.css" rel="stylesheet" type="text/css">
-	</head>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Stefan Horne" />
+	<title>Calculate Metric Critical Speed</title>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/criticalSpeedCalc.js"></script>
+	<link href="stylesheets/calcstyle.css" rel="stylesheet" type="text/css">
+	<link href="stylesheets/normalize.css" rel="stylesheet" type="text/css">
+</head>
 
-	<body>
-		<div id="calcWrapper" style="background-image: url('images/criticalspeed.png');">
+<body>
+	<div id="calcWrapper" style="background-image: url('images/criticalspeed.png');">
+
+		<form name="calculator" id="calculator">
+
+			<label id="description">Please enter at least two text values to calculate.</label>
+
+			<label class="type">Unit of Measurement:</label>
 			
-				<form name="calculator" id="calculator">
-					
-					<label id="description">Please enter at least two text values to calculate.</label>
-					
-					<label class="type">Unit of Measurement:</label>
-			
-					<select name="unit" class="input" id = "unit">
-						<option value="120904000" selected>Metric (mm)</option>
-						<option value="4760000">Imperial (inches)</option>
-					</select>
-					<label class="type">Root Diameter:</label>
-					<input type="text" name="root" class="input" autocomplete="off">
-					<label for="unit" class ="short">mm</label>
-					<label class="type">Width between bearings:</label>
-					<input type="text" name="bearings" class="input" autocomplete="off">
-					<label for="unit" class ="short">mm</label>
-					<label class="type">End Fixity:</label>
-					<select name="fixity" class="input">
-						<option value=".36">A</option>
-						<option value="1.0">B</option>
-						<option value="1.47">C</option>
-						<option value="2.23">D</option>
-					</select>
-					<label class="type">Max Speed:</label>
-					<input type="text" name="speed" class="input" autocomplete="off">
-					<label class="short">rpm</label>	
-					
-				</form>
-				
-				<div id="resetbtn" class="button">
-					<a href="javascript:reset();" id="reset" onclick=""></a>
-				</div>
-				<div id="calcbtn" class="button">
-					<a href="javascript:Calculate();" id="calculate" onclick=""></a>
-				</div>
-				<div id="closebtn" class="button">
-					<a href="#" id="close" onclick="javascript:window.close();"></a>
-				</div>
-			
+			<select name="unit" class="input" id="unit">
+				<option value="120904000" selected>Metric (mm)</option>
+				<option value="4760000">Imperial (inches)</option>
+			</select>
+			<label class="type">Root Diameter:</label>
+			<input type="text" name="root" class="input" autocomplete="off">
+			<label for="unit" class ="short">mm</label>
+			<label class="type">Width between bearings:</label>
+			<input type="text" name="bearings" class="input" autocomplete="off">
+			<label for="unit" class ="short">mm</label>
+			<label class="type">End Fixity:</label>
+			<select name="fixity" class="input">
+				<option value=".36">A</option>
+				<option value="1.0">B</option>
+				<option value="1.47">C</option>
+				<option value="2.23">D</option>
+			</select>
+			<label class="type">Max Speed:</label>
+			<input type="text" name="speed" class="input" autocomplete="off">
+			<label class="short">rpm</label>	
+
+		</form>
+
+		<div id="resetbtn" class="button">
+			<a href="javascript:reset();" id="reset" onclick=""></a>
 		</div>
-	</body>
+		<div id="calcbtn" class="button">
+			<a href="javascript:Calculate();" id="calculate" onclick=""></a>
+		</div>
+		<div id="closebtn" class="button">
+			<a href="#" id="close" onclick="javascript:window.close();"></a>
+		</div>
+
+	</div>
+</body>

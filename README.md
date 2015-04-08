@@ -1,4 +1,4 @@
-# Zapp
+# Engineering Calculators
 
 Two calculators which calculate physical limitations of screws of a given size.
 
